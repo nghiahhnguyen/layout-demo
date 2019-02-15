@@ -2,6 +2,10 @@
     box-shadow: 0 2.5px 22.5px 0 rgba(46, 104, 208, 0.1);
 }
 
+.curved-side {
+    border-radius: 2px;
+}
+
 * {
     font-family: MaisonNeue;
 }
@@ -12,4 +16,28 @@
     padding: 15px 0px 15px 25px;
     /* display: flex;
 flex-direction: row; */
+}
+
+.Center-Container {
+    position: relative;
+    height: 100%;
+}
+
+.Absolute-Center {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: solid black;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }

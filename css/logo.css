@@ -1,0 +1,7 @@
+.logo {
+    width: 150px;
+    height: 100%;
+    border-right: 1px solid #f5f6fa;
+    vertical-align: middle;
+    /* top: 50%;transform: translateY(10%); */
+}

@@ -4,3 +4,17 @@
     margin: 15px 0;
     font-size: 7px;
 }
+
+.card__title {
+    padding: 10px 0;
+}
+
+.card__statistics {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card__time {
+    color: #a6a6a6;
+    font-size: 7px;
+}
