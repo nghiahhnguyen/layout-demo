@@ -142,3 +142,7 @@ b {
 * {
     font-family: MaisonNeue;
 }
+
+*:focus {
+    outline-width: 0;
+}

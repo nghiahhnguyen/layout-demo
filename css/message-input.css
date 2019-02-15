@@ -5,6 +5,8 @@
     padding: 7.5px;
     outline: none;
     background-color: rgba(67, 146, 241, 0.1);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 *.focus {

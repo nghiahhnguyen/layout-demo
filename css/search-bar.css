@@ -3,7 +3,7 @@
     height: auto;
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 100px;
     transform: translateY(-50%);
     width: auto;
     opacity: 0.6;

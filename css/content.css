@@ -1,6 +1,6 @@
 .content {
-    width: 65%;
-    float: left;
+    width: 60%;
+    /* float: left; */
     display: inline-block;
     /* flex-grow: 3; */
     padding: 24px 10px 24px 0px;

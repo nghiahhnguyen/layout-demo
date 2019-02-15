@@ -1,0 +1,15 @@
+.main-ava-div {
+    position: absolute;
+    top: 50%;
+    height: auto;
+    width: auto;
+    transform: translateY(-50%);
+    right: 30px;
+}
+
+.main-ava {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+}
