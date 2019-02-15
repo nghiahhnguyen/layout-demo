@@ -138,3 +138,7 @@ table {
 b {
     font-weight: bold;
 }
+
+* {
+    font-family: MaisonNeue;
+}

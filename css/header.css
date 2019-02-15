@@ -1,12 +1,12 @@
 .header {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #ffffff;
     width: 100%;
-    height: 60px;
+    height: 70px;
     position: relative;
     z-index: 100;
     border-bottom: 1px solid #f5f6fa;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 /* Style the header links */

@@ -27,9 +27,10 @@
     margin: 0px;
     height: 38px;
     width: 38px;
-    background-color: #4d8cf4;
-    border: none;
+    /* background-color: #4d8cf4; */
+    background-image: linear-gradient(to right, #40bcf9, #4d8cf4);
     border-radius: 50%;
+    border: none;
 }
 
 .arrow-right {
