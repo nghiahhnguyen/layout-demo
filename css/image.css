@@ -2,3 +2,14 @@
     width: 35px;
     height: 35px;
 }
+
+.Card-Copy {
+    width: 175px;
+    height: 80px;
+    box-shadow: 0 2.5px 22.5px 0 rgba(46, 104, 208, 0.1);
+}
+
+image {
+    max-width: 100%;
+    max-height: 100%;
+}

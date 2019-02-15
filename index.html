@@ -20,6 +20,7 @@
         <link rel="stylesheet" type="text/css" href="./css/message-input.css">
         <link rel="stylesheet" type="text/css" href="./css/global.css">
         <link rel="stylesheet" type="text/css" href="./css/activities.css">
+        <link rel="stylesheet" type="text/css" href="./css/card.css">
 
 
     </head>
@@ -45,7 +46,7 @@
                 </div>
 
             </div>
-            <div class="container">
+            <div class="container-1">
                 <div class="content">
                     <p class="chat-notification">
                         <b>Jack. M</b> is typing
@@ -115,29 +116,39 @@
 
 
                 <div class="side-view">
-                    <div class="title">
+                    <div class="side-view__title">
                         Request views
-                        <select>
+                        <select class="side-view__selector">
                             <option>This week</option>
+                            <option>This month</option>
+                            <option>This year</option>
                         </select>
                     </div>
 
-                    <div class="graph">
-                        <image src="./images/card-copy@2x.png" />
+                    <div class="container">
+                        <img src="images/card-copy.png" srcset="images/card-copy@2x.png 2x,
+                                 img/card-copy@3x.png 3x" class="layer">
                     </div>
 
-                    <div class="upgrade">
-                        <image src="./images/2@2x.png" />
+                    <div class="container">
+                        <img src="images/2.png" srcset="images/2@2x.png 2x,
+                                     img/2@3x.png 3x" class="layer">
                     </div>
 
                     <div class="card">
-                        <p>Users who choose you</p>
+                        <p>
+                            <b>Users who choose you</b>
+                        </p>
+
                         <span>12</span>
                         <span>This month</span>
                     </div>
 
                     <div class="card">
-                        <p>Users who hasn't answer</p>
+                        <p>
+                            <b>Users who hasn't answer</b>
+                        </p>
+
                         <span>06</span>
                         <span>This month</span>
                     </div>

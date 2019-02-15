@@ -1,3 +1,7 @@
-.container {
-    width: 100%;
+.container-1 {
+    /* overflow: hidden; */
+    /* width: 100%; */
+    /* display: table-row; */
+    padding: 15px 25px;
+    display: inline-block;
 }

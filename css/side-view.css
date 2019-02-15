@@ -1,4 +1,21 @@
 .side-view {
-    width: 35%;
+    width: 32%;
     float: left;
+    display: inline-block;
+    padding: 10px 0 0 10px;
+}
+
+.side-view__title {
+    font-size: 9.5px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
+
+.side-view__selector {
+    background: "../images/dropdown-arrow.png" no-repeat 96% 0;
+    float: right;
+    background-color: transparent;
+    border: none;
+    font-size: 5px;
+    color: #a6a6a6;
 }
