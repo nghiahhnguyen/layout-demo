@@ -1,0 +1,44 @@
+.message-input {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    padding: 7.5px;
+    outline: none;
+    background-color: rgba(67, 146, 241, 0.1);
+}
+
+*.focus {
+    outline: none;
+}
+
+.message-input__input {
+    flex-grow: 2;
+    outline: none;
+    padding: 7.5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 7.5px;
+    /* border-color: transparent; */
+    /* height: 23px; */
+    font-size: 8px;
+}
+
+.message-input__submit {
+    margin: 0px;
+    height: 38px;
+    width: 38px;
+    background-color: #4d8cf4;
+    border: none;
+    border-radius: 50%;
+}
+
+.arrow-right {
+    border-top: 7.5px solid transparent;
+    border-bottom: 7.5px solid transparent;
+    border-left: 8.5px solid white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-15%);
+    /* transform: translateX(-50%) translateY(-50%); */
+}

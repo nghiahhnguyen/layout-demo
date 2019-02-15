@@ -10,6 +10,18 @@
         <link rel="stylesheet" type="text/css" href="./css/header.css">
         <link rel="stylesheet" type="text/css" href="./css/side-view.css">
         <link rel="stylesheet" type="text/css" href="./css/sidenav.css">
+        <link rel="stylesheet" type="text/css" href="./css/chat-noti.css">
+        <link rel="stylesheet" type="text/css" href="./css/chat-time.css">
+        <link rel="stylesheet" type="text/css" href="./css/messages.css">
+        <link rel="stylesheet" type="text/css" href="./css/message.css">
+        <link rel="stylesheet" type="text/css" href="./css/talk-bubble.css">
+        <link rel="stylesheet" type="text/css" href="./css/image.css">
+        <link rel="stylesheet" type="text/css" href="./css/ava.css">
+        <link rel="stylesheet" type="text/css" href="./css/message-input.css">
+        <link rel="stylesheet" type="text/css" href="./css/global.css">
+        <link rel="stylesheet" type="text/css" href="./css/activities.css">
+
+
     </head>
 
     <body>
@@ -38,41 +50,97 @@
                     <p class="chat-notification">
                         <b>Jack. M</b> is typing
                     </p>
-                    <div class="messages">
-                        <div class="chat-time">Today</div>
-                        <div class="message">
-                            <image src="./images/avatar-male.jpg" width=20 height=20 />
-                            <p>This is what I got in mind</p>
+                    <div class="shadow">
+                        <div class="messages">
+                            <div class="chat-time">Today</div>
+                            <div class="message left">
+                                <image class="ava left" src="./images/avatar-male.jpg" width=20 height=20 />
+                                <div class="talk-bubble left">
+                                    <div class="talktext">
+                                        <p>This is what I got in mind</p>
+                                    </div>
+                                    <div class="attachment">
+                                        <image class="attach-img" src="./images/arthur-yao-326405-unsplash.jpg" />
+                                        <image class="attach-img" src="./images/ian-battaglia-783775-unsplash.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message right">
+
+                                <image class="ava right" src="./images/businessman-silhouette.jpg" width=20 height=20 />
+
+                                <div class="talk-bubble right">
+                                    <p>Let's see...</p>
+                                </div>
+
+                            </div>
+
                         </div>
-                        <div class="message">
-                            <image src="./images/businessman-silhouette.jpg" width=20 height=20 />
-                            <p>Let's see...</p>
-                        </div>
-                        <form>
-                            <input placeholder="Message" />
-                            <button>Send</button>
+                        <form class="message-input">
+                            <input class="message-input__input" placeholder="Message" />
+                            <button class="message-input__submit">
+                                <div class="arrow-right">
+                                </div>
+                            </button>
                         </form>
+
                     </div>
                     <div class="activities">
+                        <div>
+                            <p class="activities__bar">
+                                Activities
+                            </p>
+                        </div>
                         <ul>
-                            <li>Call Glenn M.</li>
-                            <li>Meet Glenn M.</li>
+                            <li class="activity shadow">
+                                <span class="activity__text">Call Glenn M.</span>
+                                <button class="activity__button">
+                                    <img src="./images/appicns_Trash_Full.png" style="height: 18px; width: 18px" />
+                                </button>
+                            </li>
+                            <li class=" activity">
+                                <span class="activity__text">Meet Glenn M.</span>
+                                <button class="activity__button">
+                                    <img src="./images/appicns_Trash_Full.png" style="height: 18px; width: 18px" />
+                                </button>
+                            </li>
                         </ul>
                         <div>
-                            <button>
+                            <button class="add-activity">
                                 Add new activity
                             </button>
                         </div>
                     </div>
                 </div>
 
+
                 <div class="side-view">
-                    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
-                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
-                        evertitur
-                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
-                        voluptatibus.
-                    </p>
+                    <div class="title">
+                        Request views
+                        <select>
+                            <option>This week</option>
+                        </select>
+                    </div>
+
+                    <div class="graph">
+                        <image src="./images/card-copy@2x.png" />
+                    </div>
+
+                    <div class="upgrade">
+                        <image src="./images/2@2x.png" />
+                    </div>
+
+                    <div class="card">
+                        <p>Users who choose you</p>
+                        <span>12</span>
+                        <span>This month</span>
+                    </div>
+
+                    <div class="card">
+                        <p>Users who hasn't answer</p>
+                        <span>06</span>
+                        <span>This month</span>
+                    </div>
                 </div>
             </div>
 

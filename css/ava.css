@@ -1,0 +1,17 @@
+.ava {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.ava.left {
+    float: left;
+    position: relative;
+    left: 15px;
+}
+
+.ava.right {
+    float: right;
+    position: relative;
+    right: 15px;
+}
