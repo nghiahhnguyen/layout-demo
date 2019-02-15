@@ -30,12 +30,12 @@
 
 .talk-bubble.left {
     position: relative;
-    left: 50.5px;
+    left: 80px;
 }
 
 .talk-bubble.right {
     position: relative;
-    right: 50.5px;
+    right: 80px;
 }
 
 .talk-bubble.left:before {

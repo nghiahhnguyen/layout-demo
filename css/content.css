@@ -1,7 +1,9 @@
 .content {
-    width: 60%;
+    width: 55%;
     /* float: left; */
-    display: inline-block;
+    position: absolute;
+    left: 130px;
+    /* display: inline-block; */
     /* flex-grow: 3; */
     padding: 24px 10px 24px 0px;
 }

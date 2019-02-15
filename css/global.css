@@ -9,7 +9,7 @@
 .main {
     overflow: hidden;
     /* display: inline-block; */
-    padding: 15px 0px 15px 25px;
+    padding: 15px 0px 15px 0px;
     margin-top: 5px;
     /* display: flex;
 flex-direction: row; */
@@ -41,4 +41,24 @@ flex-direction: row; */
 
 .clickable {
     cursor: pointer;
+}
+
+.horizontally-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vertically-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.no-border {
+    border: none;
+}
+
+.transparent {
+    background-color: transparent;
 }

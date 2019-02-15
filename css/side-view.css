@@ -1,6 +1,6 @@
 .side-view {
     width: 32%;
-    float: right;
+    /* float: right; */
     position: absolute;
     right: 30px;
     display: inline-block;
