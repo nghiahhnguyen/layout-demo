@@ -21,3 +21,8 @@
 .sidenav a:hover {
     color: #f1f1f1;
 }
+
+.sidenav-content {
+    position: relative;
+    top: 39.4px;
+}
