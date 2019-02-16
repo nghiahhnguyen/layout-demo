@@ -29,7 +29,8 @@
         <link rel="stylesheet" type="text/css" href="./css/main-ava.css">
         <link rel="stylesheet" type="text/css" href="./css/side-ava.css">
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script data-main="scripts/main.js" src="scripts/require.js"></script>
     </head>
 
     <body>
@@ -73,7 +74,7 @@
             <div class="sidenav">
                 <div style="top:100px;" class="sidenav-content horizontally-center">
                     <div class="side-ava-div">
-                        <image class="ava" src="images/perfectly-balanced-as-all-things-should-be.jpg" />
+                        <image class="ava is-online" src="images/perfectly-balanced-as-all-things-should-be.jpg" />
                     </div>
                     <div class="side-ava-div">
                         <image class="ava" src="images/rawpixel-579266-unsplash.jpg" />
@@ -108,7 +109,7 @@
                             <div class="chat-time">Today</div>
                             <div class="message left">
                                 <image class="ava left" src="./images/avatar-male.jpg" width=20 height=20 />
-                                <div class="talk-bubble left">
+                                <div class="talk-bubble left shadow">
                                     <div class="talktext">
                                         <p>This is what I got in mind</p>
                                     </div>
@@ -123,7 +124,7 @@
                                 <image class="ava right" src="./images/matteo-catanese-424968-unsplash.jpg" width=20
                                     height=20 />
 
-                                <div class="talk-bubble right">
+                                <div class="talk-bubble right shadow">
                                     <p>Let's see...</p>
                                 </div>
 
@@ -161,6 +162,7 @@
                         </ul>
                         <div>
                             <button class="add-activity curved-side">
+                                <i class="fas fa-plus-circle"></i>
                                 Add new activity
                             </button>
                         </div>
@@ -187,6 +189,8 @@
                         <img style="width: 100%; height: auto;" src="images/2@3x.png" srcset="images/2@2x.png 2x,
                                      img/2@3x.png 3x" class="layer">
                     </div> -->
+
+                    <canvas id="myChart" width="100%" height="50px" class="line-chart"></canvas>
 
                     <div class="card shadow curved-side">
                         <p class="card__title">
