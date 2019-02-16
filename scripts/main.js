@@ -9,17 +9,35 @@ var options = {
     yAxes: [{
       gridLines: {
         color: "rgba(0, 0, 0, 0)",
+      },
+      ticks: {
+        max: 30,
+        min: 0
       }
     }]
   },
   hover: {
     mode: 'nearest'
   },
-  events: ["mousemove"]
+  events: ["mousemove"],
+  animation: {
+    onComplete: function () {
+      var ctx = this.chart.ctx;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "bottom";
+
+      this.chart.config.data.datasets.forEach(function (dataset) {
+        ctx.fillStyle = dataset.strokeColor;
+        dataset.metaDataset._points.forEach(function (p) {
+          ctx.fillText(p._chart.config.data.datasets[p._datasetIndex].data[p._index], p._model.x, p._model.y - 10);
+        });
+      })
+    }
+  }
 }
 
-var gradient = ctx.createLinearGradient(0, 0, 0, 400);
-gradient.addColorStop(0, '#4d8cf4');
+var gradient = ctx.createLinearGradient(0, 0, 0, 200);
+gradient.addColorStop(0, '#dce8fd');
 gradient.addColorStop(1, '#ffffff');
 
 var myChart = new Chart(ctx, {
@@ -27,7 +45,7 @@ var myChart = new Chart(ctx, {
   data: {
     labels: ["Sun", "Mon", "Wed", "Thu", "Fri", "Sat"],
     datasets: [{
-      data: [15, 12, 6, 27, 20, 13, 28],
+      data: [15, 12, 18, 27, 20, 13, 28],
       backgroundColor: gradient, // Put the gradient here as a fill color
       // backgroundColor: [
       //   'linear-gradient(to bottom right, red, yellow)'

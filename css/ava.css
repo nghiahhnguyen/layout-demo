@@ -16,7 +16,7 @@
     right: 15px;
 }
 
-.ava.is-online:before {
+.is-online:before {
     position: absolute;
     right: 1px;
     top: 1px;
