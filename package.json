@@ -14,5 +14,8 @@
     "requirejs": "^2.3.6",
     "semantic-ui": "^2.4.2",
     "semantic-ui-dropdown": "^2.4.1"
+  },
+  "engines": {
+    "node": "10.15.1"
   }
 }
