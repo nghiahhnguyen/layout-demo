@@ -33,6 +33,9 @@ var options = {
         });
       })
     }
+  },
+  legend: {
+    display: false
   }
 }
 
