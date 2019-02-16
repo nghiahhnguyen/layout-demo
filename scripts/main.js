@@ -1,4 +1,9 @@
-var ctx = document.getElementById("myChart").getContext("2d");
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+
+global.document = new JSDOM("../index.html").window.document;
+
+var ctx = global.document.getElementById("myChart").getContext("2d");
 var options = {
   scales: {
     xAxes: [{
@@ -17,25 +22,18 @@ var options = {
     }]
   },
   hover: {
-    mode: 'nearest'
-  },
-  events: ["mousemove"],
-  animation: {
-    onComplete: function () {
-      var ctx = this.chart.ctx;
-      ctx.textAlign = "center";
-      ctx.textBaseline = "bottom";
-
-      this.chart.config.data.datasets.forEach(function (dataset) {
-        ctx.fillStyle = dataset.strokeColor;
-        dataset.metaDataset._points.forEach(function (p) {
-          ctx.fillText(p._chart.config.data.datasets[p._datasetIndex].data[p._index], p._model.x, p._model.y - 10);
-        });
-      })
-    }
+    mode: 'nearest',
+    animationDuration: 0
   },
   legend: {
     display: false
+  },
+  events: false,
+  tooltips: {
+    enabled: false
+  },
+  animation: {
+    duration: 1
   }
 }
 

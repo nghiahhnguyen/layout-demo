@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/huunghia160799/pathfinder-demo/issues"
   },
-  "homepage": "https://github.com/huunghia160799/pathfinder-demo#readme"
+  "homepage": "https://github.com/huunghia160799/pathfinder-demo#readme",
+  "dependencies": {
+    "jsdom": "^13.2.0"
+  }
 }
