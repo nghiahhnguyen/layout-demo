@@ -5,7 +5,9 @@
     height: auto;
     width: auto;
     display: inline-block;
-    margin-left: 780px;
+    /* margin-left: 780px; */
+    right: 5%;
+    margin-left: 5%;
 }
 
 .main-ava {
