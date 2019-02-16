@@ -1,11 +1,14 @@
 .search-bar {
-    float: right;
-    height: auto;
+    /* float: left; */
+    /* height: auto; */
     position: absolute;
+    display: inline-block;
+    /* height: 50%;
+    width: auto; */
+    /* right: 100px; */
     top: 50%;
-    right: 100px;
     transform: translateY(-50%);
-    width: auto;
+    /* width: auto; */
     opacity: 0.6;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -13,6 +16,7 @@
     border-radius: 2px;
     border: 0.5px solid #dadde8;
     padding: 5px 2px;
+    margin-left: 500px;
 }
 
 .search-input {

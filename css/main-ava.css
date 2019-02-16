@@ -1,10 +1,11 @@
 .main-ava-div {
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     height: auto;
     width: auto;
-    transform: translateY(-50%);
-    right: 30px;
+    display: inline-block;
+    margin-left: 780px;
 }
 
 .main-ava {
