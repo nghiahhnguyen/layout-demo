@@ -33,7 +33,14 @@
 .add-activity {
     text-align: center;
     background-color: transparent;
+    font-family: MaisonNeue-Demi;
     font-size: 8px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4d8cf4;
     padding: 15px;
     margin: 15px 0;
     border-style: dashed;
