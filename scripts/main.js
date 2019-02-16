@@ -1,9 +1,9 @@
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
+// const jsdom = require("jsdom");
+// const { JSDOM } = jsdom;
 
-global.document = new JSDOM("../index.html").window.document;
+// global.document = new JSDOM("../index.html").window.document;
 
-var ctx = global.document.getElementById("myChart").getContext("2d");
+var ctx = document.getElementById("myChart").getContext("2d");
 var options = {
   scales: {
     xAxes: [{
